@@ -1,0 +1,7 @@
+<view class="basic-bg">
+  <image src="../../images/mine_bg.jpg" class="bg-image" mode="widthFix"></image>
+  <view class="login" bindtap="showPopup"></view>
+
+  <van-popup show="{{ show }}" closeable position="bottom" custom-style="height: 45%" round bind:close="onClose" />
+
+</view>

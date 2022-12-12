@@ -1,0 +1,3 @@
+<view class="basic-bg">
+    <image src="../../images/stock_bg.jpg" class="bg-image" mode="widthFix"></image>
+  </view>
