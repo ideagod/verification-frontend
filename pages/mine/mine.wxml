@@ -1,7 +1,19 @@
 <view class="basic-bg">
-  <image src="../../images/mine_bg.jpg" class="bg-image" mode="widthFix"></image>
-  <view class="login" bindtap="showPopup"></view>
+    <image src="../../images/mine_bg.jpg" class="bg-image" mode="widthFix"></image>
+    <view class="login" bindtap="showPopup"></view>
 
-  <van-popup show="{{ show }}" closeable position="bottom" custom-style="height: 45%" round bind:close="onClose" />
+    <van-popup show="{{ show }}" closeable position="bottom" custom-style="height: 40%" bind:close="onClose">
+        <view class="login-popup-title">{{typeDetail[type].title}}</view>
+        <van-cell-group>
+            <van-field wx:if="{{type == 0}}" label="工号" value="{{ account }}" placeholder="请输入工号" border="{{ true }}" bind:blur="getAccount" />
+            <van-field wx:if="{{type == 1}}" label="姓名" value="{{ name }}" placeholder="请输入姓名" border="{{ true }}" bind:blur="getName" />
+        </van-cell-group>
+        <view class="login-popup-btn" bindtap="navToVerify">{{typeDetail[type].title}}</view>
+        <view>
+            <view class="nav-to-register" wx:if="{{type == 0}}">还未注册？<a bindtap="changeType" data-type="1">去注册</a></view>
+            <view class="nav-to-register" wx:if="{{type == 1}}">已注册？<a bindtap="changeType" data-type="0">去登录</a></view>
+        </view>
+
+    </van-popup>
 
 </view>

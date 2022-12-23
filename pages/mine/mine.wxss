@@ -22,3 +22,32 @@ page{
   top: 67px;
   left: 240rpx;
 }
+.login-popup-title{
+    font-size: 36rpx;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20rpx 10rpx;
+    
+}
+
+.login-popup-btn{
+    background-color: #c9322b;
+    margin: 60rpx 20rpx 0 20rpx;
+    height: 70rpx;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16rpx;
+}
+
+.nav-to-register{
+    color: gray;
+    font-size: 24rpx;
+    padding: 20rpx;
+}
+a{
+    color: rgba(0, 0, 255, 0.644);
+}

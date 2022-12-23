@@ -6,7 +6,8 @@
         "pages/mine/mine",
         "pages/financing/financing",
         "pages/index/index",
-        "pages/logs/logs"
+        "pages/logs/logs",
+        "pages/camera/camera"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -17,7 +18,8 @@
         "color": "#858585",
         "selectedColor": "#e4091f",
         "backgroundColor": "#ffffff",
-        "list": [{
+        "list": [
+            {
                 "pagePath": "pages/home/home",
                 "text": "首页",
                 "iconPath": "/images/nav_icon/icon_home.png",
