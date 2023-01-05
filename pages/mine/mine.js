@@ -1,3 +1,4 @@
+let util = require('../../utils/util.js');
 Page({
     data: {
         show: false,
@@ -43,9 +44,34 @@ Page({
         })
     },
     navToVerify() {
-        console.log(this.data.name, this.data.account,this.data.type)
-        wx.navigateTo({
-            url: '/pages/camera/camera'
-        })
+        let that = this;
+        if(that.data.type == 0){
+            util.appRequest({
+                method: 'post',
+                url: 'checkAccountValid',
+                data: { 
+                    account: that.data.account,
+                },
+                success: (res) => {
+                  if(res.code == 0){
+                    wx.navigateTo({
+                        url: `/pages/camera/camera?account=${that.data.account}`
+                    })
+                  }else{
+                    wx.showToast({
+                        title: '无此工号',
+                        icon: 'error',
+                        duration: 2000
+                      })
+                  }
+                }
+            });
+        }else{
+            wx.navigateTo({
+                url: `/pages/camera/camera?name=${that.data.name}`
+            })
+        }
+      
+      
     }
 });

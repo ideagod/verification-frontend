@@ -1,1 +1,18 @@
 /* pages/camera/camera.wxss */
+.camera-bg{
+    /* margin-top: 100rpx; */
+}
+.camera-mask{
+    position: fixed;
+    width: 100%;
+    top: -15rpx;
+}
+
+.help-message{
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36rpx;
+    font-weight: 600;
+}

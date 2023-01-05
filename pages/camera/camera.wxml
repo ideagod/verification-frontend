@@ -1,5 +1,9 @@
 <!-- camera.wxml -->
-<camera device-position="front" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
-<button type="primary" bindtap="takePhoto">拍照</button>
+<view class="camera-bg">
+    <camera device-position="front" flash="off" binderror="error" frame-size="large" style="width: 100%; height: 600rpx;"></camera>
+</view>
+<image src="../../images/camera_mask.png" class="camera-mask" mode="widthFix"></image>
+<view class="help-message">{{helpMessage}}</view>
+<!-- <button type="primary" bindtap="takePhoto">拍照</button>
 <view>预览</view>
-<image mode="widthFix" src="{{src}}"></image>
+<image mode="widthFix" src="{{src}}"></image> -->

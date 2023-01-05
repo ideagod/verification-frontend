@@ -7,7 +7,8 @@
         "pages/financing/financing",
         "pages/index/index",
         "pages/logs/logs",
-        "pages/camera/camera"
+        "pages/camera/camera",
+        "pages/result/result"
     ],
     "window": {
         "backgroundTextStyle": "light",

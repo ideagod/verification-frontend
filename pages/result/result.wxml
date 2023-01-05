@@ -1,0 +1,13 @@
+<view class="basic-bg">
+    <view class="icon-bg">
+      <image src="data:image/png;base64,{{img}}" class='icon'></image>
+      <view class='icon-help-message'>{{helpMessage}}</view>
+      <view class='info' wx:if="{{code == 0}}">
+        <view>姓名：{{name}}</view>
+        <view>工号：{{account}}</view>
+      </view>
+    </view>
+    <view class="btn">
+        <van-button type="default" bind:click="redirectToHome">返回首页</van-button>
+    </view>
+</view>

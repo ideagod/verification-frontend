@@ -1,0 +1,43 @@
+page{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.basic-bg{
+  width: 100%;
+  height: 100%;
+}
+
+.icon-bg{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180rpx;
+}
+
+.icon{
+  background-color: #cccccc52;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 2%;
+}
+.icon-help-message{
+  font-weight: 500;
+  font-size: 40rpx;
+  margin-top: 28rpx;
+  color: green;
+}
+.info{
+    
+  margin-top: 48rpx;
+}
+
+.btn{
+    margin-top: 300rpx;
+    font-weight: 500;
+    font-size: 34rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
